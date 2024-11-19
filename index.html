@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome Page</title>
+    
+    <link rel="stylesheet" href="boot/CSS/bootstrap.css">
+    <link rel="stylesheet" href="boot/CSS/mdb.css">
+    <link rel="stylesheet" href="boot/CSS/style.css">
+    <link rel="stylesheet" href="abc.css">
+    <style>
+    /* General Styling for Project Cards */
+    .project-card {
+        border: none;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Default shadow */
+        margin-bottom: 30px;
+        transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth animations */
+    }
+    
+    /* Hover Effects for Desktop */
+    .project-card:hover {
+        transform: translateY(-10px); /* Lift the card up slightly */
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Stronger shadow */
+    }
+    
+    /* Mobile Effects */
+    @media (max-width: 768px) {
+        .project-card {
+            transition: transform 0.2s ease, box-shadow 0.2s ease; /* Ensure animations */
+        }
+    
+        .project-card:active {
+            transform: scale(1.05); /* Slight zoom effect on touch */
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* More pronounced shadow */
+        }
+    }
+    
+        
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <h2 class="abc">BILL GATES</h2>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="skill.html">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="project.html">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            
+        </div>
+        
+    </nav>  
+    <section class="welcome-section" style="background-color: lightgray  ">
+        <div class="container text-center">
+            <h1 class="welcome-title">Welcome to My Portfolio</h1>
+            <p class="welcome-description">Explore my journey, skills, and projects. Feel free to connect!</p>
+            
+        </div>
+    </section>
+    
+    <!-- picture section-->
+    
+    <!-- Welcome Section -->
+   
+    <section class="welcome-section">
+        <div class="container text-center">
+           <img src="main.jpg" alt="Welcome Image" class="img-fluid">
+        </div>
+    </section>
+ <section class="projects-section">
+        <div class="container">
+            <div class="projects-header">
+               <center> <h2 style="color:  #041e42;;">My Projects</h2>
+               <p>Here are some of the projects I have worked on. Each project showcases my skills and creativity.</p>
+            </center>
+            </div>
+            
+            <div class="row">
+                <!-- Project 1 -->
+                <div class="col-md-4">
+                    <div class="card project-card">
+                        <a href="https://www.gatesfoundation.org/">
+                        <img src="pro1.jpg" class="card-img-top" alt="Project 1 Image">
+                        <div class="card-body"  style="color: #041e42;">
+                            <h5 class="card-title" style="text-size-adjust: 20px;">Bill & Melinda Gates Foundation</h5>
+                            <p class="card-text">foundation focuses on tackling some of the world's most challenging problems improving global health, reducing poverty, and expanding educational opportunities</p>
+                            </div>
+                   
+                        </div>
+                    </a>
+                </div>
+                
+                <!-- Project 2 -->
+                <div class="col-md-4" >
+                    <a href="https://www.breakthroughenergy.org/">
+                    <div class="card project-card">
+                        <img src="pro2.jpg" class="card-img-top" alt="Project 2 Image">
+                        <div class="card-body" style="color: #041e42;">
+                            <h5 class="card-title">Breakthrough Energy</h5>
+                            <p class="card-text">This initiative focuses on accelerating the world's transition to clean energy by investing in innovative technologies and solutions.</p>
+                        </div>
+                    </div>
+                    </a>
+                </div>
+                
+                <!-- Project 3 -->
+                <div class="col-md-4">
+                    <a href="https://www.microsoft.com/">
+                    <div class="card project-card" style="color: #041e42;">
+                        <img src="pro3.jpg" class="card-img-top" alt="Project 3 Image">
+                        <div class="card-body">
+                            <h5 class="card-title">Microsoft</h5>
+                            <p class="card-text">It allowed users to interact with their computers using a mouse, windows, and menus, rather than relying solely on text-based commands</p>
+                        </div>
+                    </div>
+                </a>
+                </div>
+                
+              
+            </div>
+        </div>
+    </section>
+    <!-- Footer -->
+    <div class="footer">
+        
+        <p>Follow me on:</p>
+        <div class="footer-icons">
+            <!--Link-->
+            <div class="icon-group">
+                <img src="icons8-linkedin-50.png" alt="YouTube">
+                <div class="right-line"></div>
+                <a href="https://www.linkedin.com/in/williamhgates" target="_blank">Bill Gates</a>
+            </div>
+            <!-- YouTube -->
+            <div class="icon-group">
+                <img src="icons8-youtube-48.png" alt="YouTube">
+                <div class="right-line"></div>
+                <a href="https://www.youtube.com" target="_blank">billgateyoutube</a>
+            </div>
+            <!-- Twitter -->
+            <div class="icon-group">
+                <img src="icons8-twitter-50.png" alt="Twitter">
+                <div class="right-line"></div>
+                <a href="https://www.twitter.com/billgates" target="_blank">billgateTwitte</a>
+            </div>
+            <!-- Instagram -->
+            <div class="icon-group">
+                <img src="instagram.png" alt="Instagram">
+                <div class="right-line"></div>
+                <a href="https://www.instagram.com/thisisbillgates/" target="_blank">thisisbillgates</a>
+            </div>
+        </div>
+        <p>All rights reserved.</p>
+        <hr class="border-white" width="50%">
+        <div style="margin-bottom: 20px;">
+            <h5>Contact Information:</h5>
+            <p style="margin: 5px 0;">  Email: <a href=" mailto:billgates@example.com" style="color: white; text-decoration: none;">billgates@example.com</a></p>
+            <p style="margin: 5px 0;"><img src="loc.jpg" width="20px" > Location: Seattle, Washington, USA</p>
+            <p>📞 Contact my team: <a href="tel:+123456789" style="color: white; text-decoration: none;">+1 (234) 567-890</a></p>
+        
+        </div>
+        <p>All rights reserved.</p>
+        <hr class="border-white" width="50%">
+        <p>&copy; 2024 Bill Gates:</p>
+    </div>
+   
+
+    <!-- Bootstrap JS -->
+    <script src="boot/JS/jquery.js"></script>
+    <script src="boot/JS/popper.js"></script>
+    <script src="boot/JS/bootstrapjs.js"></script>
+    <script src="boot/JS/mdbjs.js"></script>
+</body>
+</html>
